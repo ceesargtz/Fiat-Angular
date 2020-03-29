@@ -1,1 +1,413 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url("assets/img/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row.no-gutters > [class^="col-"] {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/* navbar */
+.hamburguer-icon{
+  position: absolute;
+  top: 10px;
+  right: 25px;;
+  font-size: 17px;
+}
+.fa-bars{
+  color: #ce2f33;
+}
+
+
+.icono-fiat{
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: -20px;
+
+}
+
+.navbar-size{
+  font-size: 12px;
+  height: 43px;
+  position: relative;
+}
+
+.navbar{
+  position: relative;
+}
+
+.navbar-center{
+  display: flex;
+  padding-top: 8px;;
+  margin: 0 5%;
+  justify-content: space-around;
+  padding-right: 5%;
+}
+.navbar-center li{
+  display: inline;
+  padding: 5px;
+}
+.navbar-center li a{
+  text-decoration: none;
+  color: black;
+
+}
+#menu2{
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+}
+
+#menu2 button{
+  margin: 0;
+  border-radius: 0;
+}
+
+.cotizador{
+  margin-top: 30px;
+  font-size: 13px;
+}
+.citadino{
+  font-size: 18px;
+}
+.tc2{
+  display: none;
+}
+.lineas{
+  z-index:1;
+  position: relative;
+}
+
+.lineas::before{
+ border-top: 2px solid currentColor;
+ content: "";
+ margin: 0 auto;
+ position: absolute;
+ top: 50%;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ width: 95%;
+ z-index: -1;
+}
+
+.lineas span{
+  background: white;
+  padding: 0 15px;
+}
+
+.lineas-citadino::before{
+  width: 470px;
+}
+.lineas-citadino span{
+  background:#4957d1;
+}
+.titulo{
+  margin-top: -20px;
+  font-size: 110px;
+}
+.carro{
+  position: absolute;
+  z-index: 1;
+  top: 220px;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  width: 480px;
+}
+
+.datos{
+  padding-top:110px;
+  margin-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #666666;
+}
+.subtitulos{
+  margin-top: -7px;
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+}
+.etiqueta{
+  font-size: 1vw;
+  margin-top: 50px;
+  padding-left: 11px;
+
+}
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid red;
+  resize: none;
+}
+textarea{
+  height: 15vw;
+}
+
+.linea{
+ margin:0px 20px;
+ width:90px;
+ border-bottom:3px solid red;
+ top:10px;
+ float:left;
+}
+
+
+select,input,label {
+  appearance:none;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1vw;
+  letter-spacing: 2px
+}
+
+.select:after{
+  font-family: "Font Awesome 5 Free";
+   content: "\f078";
+   position: absolute;
+   right:30px; top:65%;
+   font-weight: 700;
+   pointer-events: none;
+}
+
+.boton-enviar button{
+  background-color: white;
+  font-size: 13px;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid red;
+  width: 150px;
+}
+
+.boton-enviar{
+  text-align: right;
+}
+
+.container-pago{
+  padding: 0px 100px
+}
+
+::placeholder {
+  color: black;
+}
+
+.titulos{
+  margin-top: 80px;
+  color:red;
+  font-size: 4vw
+  /* font-size: 50px; */
+}
+
+.icono-button{
+  display: none;
+}
+
+.rb-contactar{
+  width: 33%;
+  padding-top: 30px;
+}
+
+.correo{
+  margin-right: 30px;
+}
+.rb-pago{
+  width: 50%;
+}
+
+.rb{
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+input[type=radio]:checked + label{
+  background-color: red;
+  color: white;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+
+
+.cb{
+  padding-left: 2em;
+  position: relative;
+}
+
+.cb:before{
+  content:'';
+  background: none;
+  border: 1px solid gray;
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  left: 0px;
+}
+
+input[type=checkbox]:checked + .cb:before{
+  font-family: "Font Awesome 5 Free";
+   content: "\f00c";
+   display: inline-block;
+   text-align: center;
+   vertical-align: middle;
+   font-weight: 700;
+   color: gray;
+}
+
+/* Fuentes */
+
+.lato-regular {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.lato-bold{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.lato-black{
+ font-family: 'Lato';
+ font-style: normal;
+ font-weight: 900;
+}
+.display-bold{
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px
+}
+
+.display-black-italic{
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 900;
+}
+
+@media (max-width:1024px){
+
+  .titulo{
+    font-size: 85px;
+  }
+  .carro{
+    top: 199px;
+    width: 60vw;
+  }
+  .datos{
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  select,input,label {
+    font-size: 1.3vw;
+  }
+  .titulos{
+    margin-top: 50px;
+    font-size: 6vw;
+  }
+  .container-pago{
+    padding: 0;
+  }
+
+  .rb{
+    text-align: center;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px){
+  .tc1{
+    display: none;
+  }
+  .tc2{
+    display: block;
+  }
+  .lineas-sub::before{
+    width: 550px;
+  }
+}
+@media (max-width: 600px) {
+  #menu{
+    display: none;
+  }
+  .tc1{
+    display: block;
+  }
+  .tc2{
+    display: none;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .citadino{
+    font-size: 3.9vw;
+  }
+  .titulo{
+    font-size: 13vw;
+  }
+  .subtitulos{
+    font-size: 3.9vw;
+  }
+  .carro{
+    top: 165px;
+    width: 300px;
+  }
+  .datos{
+    padding-top:5px;
+    margin-top: 100px;
+    color: #666666;
+  }
+  .lineas::after,.lineas::before{
+    width: 0;
+  }
+  .titulos{
+    font-size: 9.1vw
+  }
+  .etiqueta{
+    margin-top: 25px;
+    font-size: 4vw;
+  }
+  select,input,label {
+    font-size: 3.5vw;
+  }
+  .icono-button{
+    display: block;
+  }
+  .correo{
+    margin-right: 0;
+  }
+  .rb-ambos{
+    margin-top: 10px;
+  }
+  textarea{
+    margin: 0 15px;
+    height: 30vw;
+  }
+  .row.no-gutters > [class^="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .cb{
+    font-size: 3.3vw;
+    font-weight: bold;
+  }
+  .boton-enviar{
+    margin-top: 50px;
+    text-align: center;
+  }
+
+}
